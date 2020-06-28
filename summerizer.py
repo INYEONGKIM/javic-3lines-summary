@@ -1,10 +1,9 @@
 #-*- coding:utf-8 -*-
 
-
 ### Requirements
 
 # newspaper3k
-# konlpy (이미 설치됨 ㅇㅇ)
+# konlpy
 # scikit-learn
 
 ####
@@ -149,12 +148,6 @@ class TextRank(object):
             keywords.append(self.idx2word[i])
 
         return keywords
-
-
-# url = 'http://v.media.daum.net/v/20170611192209012?rcmd=r'
-# textrank = TextRank(url)
-
-# text = f"건강 이상설과 사망설이 제기됐던 김정은 북한 국무위원장의 공개 활동이 영상으로 공개됐다. 김 위원장은 보란듯이 자연스럽게 걸으며 담배를 피우는 등 여유있는 모습을 연출했다. 2일 오후 북한 조선중앙TV는 김 위원장이 전날 평안남도 순천 인비료공장 준공식에 참석한 소식을 약 15분 가량 보도했다. 공장 소개 영상 뒤 등장한 김 위원장은 건설자들의 '만세' 환호를 받으며 준공식 행사장으로 입장, 건재함을 과시했다. 김 위원장은 검은색 인민복 차림으로 자연스럽게 걸었으며, 계단 등을 내려갈 때도 부축을 받지 않았다. 지난달 11일 정치국회의 당시와 비교해 다소 피부가 타고 거칠어진 모습이긴 했지만 평소와 크게 달라지지 않은 외양이었다. 김 위원장은 연단에서 진지한 표정을 짓는 한편 맞은편에 앉은 김재룡 내각총리와 마주보면서 대화를 하고 크게 함박 웃음을 지어보이기도 했다."
 
 text = ""
 with open("article1.txt", mode='r', encoding='utf-8') as raw_text:
